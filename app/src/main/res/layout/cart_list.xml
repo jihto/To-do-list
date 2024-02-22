@@ -1,0 +1,64 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView1"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="50px"
+    app:cardCornerRadius="15dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/gray_50"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|end"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/titleIcon"
+            android:background="@drawable/rounded_background"
+            android:layout_width="50dp"
+            android:gravity="start"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_noti"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="start|end"
+            >
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Create webflow design and responsive on mobile"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"/>
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_100"
+                android:textStyle="bold"
+                android:text="Create Landing page " />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Landing page " />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
